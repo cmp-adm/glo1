@@ -16,14 +16,14 @@
             <div class="navigation">
                 <div class="user">
                     <img src="images/Avatar.png" alt="Avatar" class="user-avatar">
-                    <snan class="user-name">Mateusz</snan>
+                    <span class="user-name">Mateusz</span>
                 </div>
                 <nav class="navigation-panel">
                     <a href="#" class="navigation-link">Home</a>
                     <a href="#" class="navigation-link">Create</a>
                 </nav>
                 <div class="icons-panel">
-                    <a href="#" class="icon-link">
+                    <a href="#" class="icon-link active">
                         <svg class="header-icon" width="20" height="20">
                             <use xlink:href="images/icons.svg#users"></use>
                         </svg>
@@ -42,11 +42,139 @@
                         <svg class="header-icon" width="24" height="24">
                             <use xlink:href="images/icons.svg#info"></use>
                         </svg>
-                            
+                        <svg class="header-icon" width="20" height="20" style="padding-left: 3px;">
+                            <use xlink:href="images/icons.svg#dropdown"></use>
+                        </svg>
                     </a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="container">
+        <aside class="menu-sidebar">
+            <div class="user">
+                <img src="images/Avatar.png" alt="Avatar" class="user-avatar">
+                <span class="user-name">Mateusz Wierzbicki</span>
+            </div>
+            <!-- /.user -->
+            <nav class="aside-nav-group">
+                <a href="#" class="aside-nav-link active">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#news"></use>
+                    </svg>
+                    <span class="aside-nav-text">News Feed</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#replies"></use>
+                    </svg>
+                    <span class="aside-nav-text">Messages</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#marketplace"></use>
+                    </svg>
+                    <span class="aside-nav-text">Marketplace</span>
+                </a>
+            </nav>
+            <nav class="aside-nav-group">
+                <h3 class="aside-nav-title">Shortcuts</h3>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#cup"></use>
+                    </svg>
+                    <span class="aside-nav-text">Product Design</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#cup"></use>
+                    </svg>
+                    <span class="aside-nav-text">UX & UI</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#cup"></use>
+                    </svg>
+                    <span class="aside-nav-text">Figma</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#cup"></use>
+                    </svg>
+                    <span class="aside-nav-text">Ant Design</span>
+                </a>
+            </nav>
+            <nav class="aside-nav-group">
+                <h3 class="aside-nav-title">Explore</h3>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#pages"></use>
+                    </svg>
+                    <span class="aside-nav-text">Pages</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#groups"></use>
+                    </svg>
+                    <span class="aside-nav-text">Groups</span>
+                </a>
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-nav-icon" width="24" height="24">
+                        <use xlink:href="images/icons.svg#events"></use>
+                    </svg>
+                    <span class="aside-nav-text">Events</span>
+                </a>
+            </nav>
+            <nav class="nav-bottom">
+                <a href="#" class="aside-nav-link">
+                    <svg class="aside-bottom-icon" width="16" height="16">
+                        <use xlink:href="images/icons.svg#dropdown"></use>
+                    </svg>
+                    <span class="aside-bottom-text">See more...</span>
+                </a>
+            </nav>
+        </aside>
+        <!-- /.menu-sidebar -->
+        <main class="main-feed">
+            <section class="create-post">
+                <div class="create-post-header">
+                    <h4 class="create-post-title">Create post</h4>
+                </div>
+                <!-- /.header -->
+                <div class="create-post-body">
+                    <img src="images/Avatar.png" alt="Avatar" class="create-post-avatar">
+                    <div class="create-post-input" contenteditable="true">What’s on your mind, Mateusz?</div>
+                </div>
+                <!-- /.body -->
+                <div class="create-post-footer">
+                    <button class="btn">
+                        <svg class="button-icon" width="24" height="24">
+                            <use xlink:href="images/icons.svg#photo-video"></use>
+                        </svg>
+                        <span class="button-text">Photo/Video</span>
+                    </button>
+                    <button class="btn">
+                        <svg class="button-icon" width="24" height="24">
+                            <use xlink:href="images/icons.svg#friends"></use>
+                        </svg>
+                        <span class="button-text">Tag Friends</span>
+                    </button>
+                    <button class="btn">
+                        <svg class="button-icon" width="24" height="24">
+                            <use xlink:href="images/icons.svg#smile"></use>
+                        </svg>
+                        <span class="button-text">Feeling Active</span>
+                    </button>
+                    <button class="btn">
+                        <svg class="button-icon" width="24" height="24">
+                            <use xlink:href="images/icons.svg#more"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- /.footer -->
+            </section>
+        </main>
+        <!-- /.main-feed -->
+    </div>
 </body>
 </html>
