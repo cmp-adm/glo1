@@ -486,3 +486,23 @@ section {
     background-position: center;
     background-size: cover;
 }
+.burthday {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.burth-name {
+    color: #0050B3;
+}
+.burth-inform {
+    color: #595959;
+}
+.funpage {
+    padding: 16px 24px;
+
+}
+.funpage-header {
+    
+}
