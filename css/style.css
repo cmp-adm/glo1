@@ -404,7 +404,7 @@ section {
     align-items: center;
     margin-bottom: 16px;
 }
-.stories-title, .funpage-title {
+.stories-title, .funpage-header-title {
     margin: 0;
     font-weight: 600;
     font-size: 14px;
@@ -508,6 +508,11 @@ section {
 }
 .funpage-stat {
     margin-left: 12px;
+}
+.funpage-title {
+    display: flex;
+    color: #0050b3;
+    padding-bottom: 16px;
 }
 .funpage-data {
     display: flex;
