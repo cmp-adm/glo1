@@ -8,6 +8,7 @@ body {
 .header {
     padding: 6px 0;
     background-color: #0050B3;
+    margin-bottom: 18px;
 }
 .header-block {
     max-width: 1200px;
@@ -20,7 +21,6 @@ body {
     font-size: 14px;
     line-height: 22px;
     padding: 5px 30px 5px 12px;
-    width: 100%;
     width: 336px;
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
@@ -70,6 +70,8 @@ body {
     margin-right: 8px;
     width: 32px;
     height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .user-name {
     color: #ffffff;
@@ -85,6 +87,23 @@ body {
     display: flex;
     align-items: center;
     margin-left: 17px;
+    position: relative;
+}
+.notification {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5222d;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    color: #ffffff;
+    width: 18px;
+    height: 18px;
+    font-weight: normal;
+    font-size: 8px;
+    top: -7px;
+    right: -10px;
 }
 .header-icon {
     fill: #002766;
@@ -101,13 +120,12 @@ body {
 }
 .container {
     display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     margin: auto;
 }
 .menu-sidebar {
-    max-width: 192px;
-    margin-top: 18px;
-    margin-right: 18px;
+    width: 192px;
 }
 .menu-sidebar .user {
     padding-left: 10px;
@@ -115,6 +133,8 @@ body {
 .menu-sidebar .user-avatar {
     width: 24px;
     height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .menu-sidebar .user-name {
     font-weight: normal;
@@ -123,7 +143,8 @@ body {
     color: #262626;
 }
 .aside-nav-group {
-    margin: 12px 0 12px 12px;
+    width: 100%;
+    margin: 12px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,14 +194,14 @@ body {
     color: #1890FF;
 }
 .main-feed {
-    margin-top: 18px;
     width: 588px;
 }
-.create-post {
+section {
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 4px;    
     overflow: hidden;
+    margin-bottom: 24px;
 }
 .create-post-header {
     padding: 9px 16px;
@@ -202,13 +223,18 @@ body {
     width: 40px;
     height: 40px;
     margin-right: 16px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .create-post-input {
     width: 100%;
     font-size: 16px;
     line-height: 24px;
     color: #8C8C8C;    
-    padding-top: 8px;
+    padding: 8px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .create-post-footer {
     display: flex;
@@ -234,4 +260,207 @@ body {
 }
 .button-text {
     margin-left: 8px;
+}
+.post {
+    padding: 16px;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.post-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+.post-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-author{
+    width: 100%;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0050B3;
+    text-decoration: none;
+}
+.post-details {
+    display: flex;
+    align-items: center;
+}
+.post-time {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;    
+}
+.post-time::after {
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+    content:'';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #BFBFBF;
+}
+.post-more-button {
+    background: #fff;
+    border: none;
+}
+.post-button-icon {
+    fill: #595959;
+}
+.post-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;    
+}
+.post-text a {
+    color: #096dd9;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+.post-image {
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    max-width: 100%;
+}
+.likes {
+    display: flex;
+    align-items: center;
+    margin: 9px 0;
+}
+.like-counter {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    margin-left: 4px;
+}
+.post-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.post-footer:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-bottom: 16px;    
+}
+.post-button {
+    background-color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.post-button-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.right-sidebar {
+    width: 384px;
+}
+.stories {
+    padding: 16px 24px;
+}
+.stories-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.stories-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+}
+.stories-buttons {
+    display: flex;
+}
+.stories-button-link {
+    font-size: 14px;
+    color: #0050b3;
+    text-decoration: none;
+}
+.stories-button {
+    display: flex;
+    align-items: center;
+}
+.stories-button-icon {
+    margin-right: 4px;
+}
+.stories-buttons-delimiter {
+    margin: 6px 8px;
+
+}
+.story-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.story-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #1890ff;
+}
+.story-message {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;   
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    width: 100%;
+    word-wrap: break-word;
+}
+.story-title {
+    color: #0050b3;
+    font-weight: 600;
+}
+.story-body {
+    color: #8C8C8C;
+}
+.concuria {
+    background-image: url(../images/figma.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.figma {
+    background-image: url(../images/concuria.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ant-design {
+    background-image: url(../images/ant-design.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

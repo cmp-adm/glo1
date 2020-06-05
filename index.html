@@ -34,6 +34,7 @@
                         </svg>
                     </a>
                     <a href="#" class="icon-link">
+                        <span class="notification">9+</span>
                         <svg class="header-icon" width="16" height="22">
                             <use xlink:href="images/icons.svg#bell"></use>
                         </svg>
@@ -173,8 +174,155 @@
                 </div>
                 <!-- /.footer -->
             </section>
+            <section class="post">
+                <div class="post-header">
+                    <div class="user">
+                        <img src="images/Avatar.png" alt="Avatar" class="post-avatar">
+                        <div class="post-info">
+                            <a href="#" class="post-author">Mateusz Wierzbicki</a>
+                            <div class="post-details">
+                                <span class="post-time">3 hrs</span>
+                                <!-- альтернативный вариант реализован в css правило .post-time::After 
+                                    <svg class="setting-icon" width="4" height="4">
+                                    <use xlink:href="images/icons.svg#circle"></use>
+                                </svg> -->
+                                <svg class="setting-icon" width="14" height="14">
+                                    <use xlink:href="images/icons.svg#gear"></use>
+                                </svg>
+                                </div>
+                        </div>
+                    </div>
+                    <button class="post-more-button">
+                        <svg class="post-more-icon" width="24" height="24">
+                            <use xlink:href="images/icons.svg#more"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- /.post-header -->
+                <div class="post-content">
+                    <p class="post-text">
+                        Did you know that all of this was made using only components and styles from Ant Desing System for Figma? 
+                        Learn more: <a href="#">https://antforfigma.com</a>
+                    </p>
+                    <img src="images/post-img.jpg" alt="Author's image" class="post-image">
+                </div>
+                <!-- /.post-content -->
+                <div class="likes">
+                    <svg class="like-icon" width="16" height="16">
+                        <use xlink:href="images/icons.svg#vote"></use>
+                    </svg>
+                    <span class="like-counter">23</span>
+                </div>
+                <!-- /.likes -->
+                <div class="post-footer">
+                    <button class="post-button">
+                        <svg class="post-button-icon" width="20" height="20">
+                            <use xlink:href="images/icons.svg#like"></use>
+                        </svg>
+                        <span class="post-button-text">Like</span>
+                    </button>
+                    <button class="post-button">
+                        <svg class="post-button-icon" width="20" height="20">
+                            <use xlink:href="images/icons.svg#chat"></use>
+                        </svg>
+                        <span class="post-button-text">Comment</span>
+                    </button>
+                    <button class="post-button">
+                        <svg class="post-button-icon" width="20" height="20">
+                            <use xlink:href="images/icons.svg#share"></use>
+                        </svg>
+                        <span class="post-button-text">Share</span>
+                    </button>
+                </div>
+                <!-- /.post-footer -->
+            </section>
+            <!-- /.post -->
         </main>
         <!-- /.main-feed -->
+        <aside class="right-sidebar">
+            <section class="stories">
+                <div class="stories-header">
+                    <h4 class="stories-title">Stories</h4>
+                    <div class="stories-buttons">
+                        <a href="#" class="stories-button-link">
+                            <div class="stories-button">
+                                <svg class="stories-button-icon" width="16" height="16">
+                                    <use xlink:href="images/icons.svg#clock"></use>
+                                </svg>
+                            <span class="stories-button-text">Archive</span>
+                            </div>
+                        </a>
+                        <svg class="stories-buttons-delimiter" width="4" height="4">
+                            <use xlink:href="images/icons.svg#point"></use>
+                        </svg>
+                        <a href="#" class="stories-button-link">
+                            <div class="stories-button">
+                                <!--                             <svg class="stories-button-icon" width="16" height="16">
+                                <use xlink:href="images/icons.svg#clock"></use>
+                            </svg>
+-->                            <span class="stories-button-text">Settings</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /.stories-buttons -->
+                </div>
+                <!-- /.story-header -->
+                <a class="story-item">
+                    <div class="story-image">+</div>
+                    <div class="story-message">
+                        <span class="story-title">
+                            Add to your story
+                        </span>
+                        <span class="story-body">
+                            Share a photo or video or write something
+                        </span>
+                    </div>
+                </a>
+                <a class="story-item">
+                    <div class="story-image concuria"></div>
+                    <div class="story-message">
+                        <span class="story-title">
+                            Concuria
+                        </span>
+                        <span class="story-body">
+                            4 hours ago
+                        </span>
+                    </div>
+                </a>
+                <a class="story-item">
+                    <div class="story-image figma"></div>
+                    <div class="story-message">
+                        <span class="story-title">
+                            Figma
+                        </span>
+                        <span class="story-body">
+                            5 hours ago
+                        </span>
+                    </div>
+                </a>
+                <a class="story-item">
+                    <div class="story-image ant-design"></div>
+                    <div class="story-message">
+                        <span class="story-title">
+                            Ant Design
+                        </span>
+                        <span class="story-body">
+                            6 hours ago
+                        </span>
+                    </div>
+                </a>
+            </section>
+            <!-- /.stories -->
+            <section class="burthday">
+
+            </section>
+            <!-- /.burthday -->
+            <section class="funpage">
+
+            </section>
+            <!-- /.funpage -->
+        </aside>
+        <!-- /.right-sidebar -->
     </div>
 </body>
 </html>
